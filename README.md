@@ -14,7 +14,9 @@
 ### 🎯 Resolução:
 O código da API foi completamente refatorado para incorporar o Typescript, proporcionando melhor tipagem e organização ao projeto. Os testes de integração foram implementados usando o Jest, garantindo a robustez e confiabilidade do sistema. Você pode ver a versão antes de ser refatorada na pasta `__old`.
 
-## 👁️‍🗨️ Utilização
+#
+
+### 👁️‍🗨️ Utilização
 Passo a passo para testar o código em sua máquina
 
 ```diff
