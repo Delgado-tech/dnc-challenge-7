@@ -1,5 +1,3 @@
-### Projeto Desafio 7: Teste de Integração para API em Typescript
-
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:db813b,50:d76f32,100:e0945e&height=150&section=header" width="100%">
 
 <html>
@@ -14,14 +12,44 @@
 #
 
 ### 🎯 Resolução:
-O código da API foi completamente refatorado para incorporar o Typescript, proporcionando melhor tipagem e organização ao projeto. Os testes de integração foram implementados usando o Jest, garantindo a robustez e confiabilidade do sistema.
+O código da API foi completamente refatorado para incorporar o Typescript, proporcionando melhor tipagem e organização ao projeto. Os testes de integração foram implementados usando o Jest, garantindo a robustez e confiabilidade do sistema. Você pode ver a versão antes de ser refatorada na pasta `__old`.
 
-<br>
+## 👁️‍🗨️ Utilização
+Passo a passo para testar o código em sua máquina
 
-<div align="left">
- <img src="https://caminho/para/screenshot/teste1.png">
- <img src="https://caminho/para/screenshot/teste2.png">
-</div>
+```diff
++ Passo 1: Clone o repositório
+# > git clone https://github.com/Delgado-tech/dnc-jest-challenge.git
+
++ Passo 2: Crie a pasta node_modules com npm install
+# > npm install
+
++ Passo 3: Conecte o seu banco de dados
+# Para testar o código será necessário ter uma conexão MySQL ativa em sua máquina;
+# Crie um banco de dados para testar o código (não será necessário criar nenhuma tabela);
+# Dentro do projeto vá em:
+! src > config > knex.ts
+# Dentro do arquivo knex.ts altere os campos "host, port, user, password e database";
+# Coloque os dados referentes ao seu banco de dados nos campos informados.
+
++ Passo 4: Carregue a migração do projeto em seu banco de dados;
+# Para o projeto funcionar será necessário carregar a migração do knex;
+# Rode o comando a seguir em seu terminal:
+# > npx knex migrate:latest
+# Pronto! A tabela "Aluno" foi adicionada ao seu banco de dados.
+
++ Passo 5: Configure o seu arquivo .env
+# Variáveis:
+# ROOT_URL="http://localhost:8080"
+# PORT="8080"
+
++ Passo 6: Inicie o projeto
+# > npm run start
+
++ Passo 7: Rode os testes:
+# Só será possivel rodar os testes se a aplicação tiver sido iniciada;
+# > npm run test
+```
 
 <br>
 
