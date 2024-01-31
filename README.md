@@ -34,7 +34,7 @@ Passo a passo para testar o código em sua máquina
 # Dentro do arquivo knex.ts altere os campos "host, port, user, password e database";
 # Coloque os dados referentes ao seu banco de dados nos campos informados.
 
-+ Passo 4: Carregue a migração do projeto em seu banco de dados;
++ Passo 4: Carregue a migração do projeto em seu banco de dados
 # Para o projeto funcionar será necessário carregar a migração do knex;
 # Rode o comando a seguir em seu terminal:
 # > npx knex migrate:latest
